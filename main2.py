@@ -24,7 +24,7 @@ shadowBackup = {
 
 # Create a string with all the tags with either "+" or "-" for rule34 api
 def formatTags(tags):
-    return "".join("+" + i for i in tags)
+    return "".join(f"+{i}" for i in tags)
 
 def response_handler(response_item):
     # Check if the status code is not 200 (invalid)
@@ -64,122 +64,110 @@ async def on_ready():
 @bot.command()
 async def fcum(ctx):
     cTag = ["female_ejaculation"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def ftouch(ctx):
     cTag = ["female_masturbation"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def squirt(ctx):
     cTag = ["female_ejaculation"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def titjob(ctx):
     cTag = ["titjob"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def thighs(ctx):
     cTag = ["thick_thighs"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def pussy(ctx):
     cTag = ["vagina"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def hboobs(ctx):
     cTag = ["huge_breasts"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def bass(ctx):
     cTag = ["big_ass"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def ass(ctx):
     cTag = ["ass"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def boobs(ctx):
     cTag = ["big_breasts"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def female(ctx):
     cTag = ["female"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 @bot.command()
 async def female2(ctx):
     cTag = ["female_only"]
-    response = request_handler(formatTags([*tags_list, *cTag]), 1)
-    if response:
-            while True:
-                await ctx.send(rchoice(response)['file_url'])
+    if response := request_handler(formatTags([*tags_list, *cTag]), 1):
+        while True:
+            await ctx.send(rchoice(response)['file_url'])
     else:
-                print("Error: Invalid response")
+        print("Error: Invalid response")
 
 def stop_bot():
   """Stops The Bot"""
