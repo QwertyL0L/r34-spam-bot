@@ -3,6 +3,21 @@
 # Rule34 Selfbot
 a discord selfbot that grabs rule34 from rule34.xxx and then spams it in people's dms or server's
 
+# Usage
+
+1. Download or git clone this repo
+
+2. run the command below
+```
+pip install -r requirements.txt
+```
+
+3. edit the 3rd to last line of main.py and add your discord token
+
+4. run the run.bat file
+
+5. Done!
+
 # How To Get Your Discord Token
 
 1. press ctrl+shift+i on the browser version of discord
